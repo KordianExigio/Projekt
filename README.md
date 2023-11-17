@@ -8,4 +8,4 @@ Tutaj powstanie storna internetowa sklepu z bronia gdzie klienci bedą mogli kup
 
 4.Baza danych z produktami i zamowieniami i inne
 
-(stworzylem noew reopzytorium poniewaz byl problem z poprzednim)
+(stworzylem nowe reopzytorium poniewaz byl problem z poprzednim)
