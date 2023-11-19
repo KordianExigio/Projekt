@@ -7,6 +7,7 @@
  }
  
  body {
+    height: 0px;
      margin: 0;
      font-family: 'Kdam Thmor Pro', sans-serif;
      overflow-x: hidden; /* Hide horizontal scrollbar */
@@ -21,7 +22,7 @@
  
  
  nav {
-        display: flexbox;
+    display: flexbox;
      color: #ffffff;
      padding: 0px;
      grid-column: 1/6;
@@ -408,5 +409,87 @@
 
 }
 
-/*Sprawdzanie czy dziala pushowanie zmian do reposytorium zewntrzenego*/
+.kontakt{   
+    color: white;
+    padding: 15px;
+    padding-bottom: 50px;
+    background-color: #404040;
+    width: 98.59%;
+    top: -250px;
+    position: relative;
+    grid-column: 1/6;
+}
+
+.kontakt h1{
+    text-align: center;
+}
+
+.line-4{
+    width: 370px;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 0px;
+    left: 50%;
+    height: 2px;
+    background-color: black;
+}
+
+.kontakt-tekst p{
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    font-size: 35px;
+}
+
+.mapy{
+    padding: 40px;
+    display: grid;
+    width: 95%;
+
+    grid-template-columns: repeat(3,29%);
+    gap: 120px;
+}
+
+.mapa{
+    border-radius: 30px;
+    padding: 30px;
+    height: ;
+    box-shadow: 15px 15px 15px black;
+    background-color: #363636;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+
+.mapa iframe{
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.mapa p{
+    font-size: 25px;
+    word-wrap: break-word;
+    padding-right: 20px;
+}
+
+.stopka{
+    position: relative;
+    padding: 30px;
+    top: -250px;
+    background-color: #363636;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+}
+
+.stopka div{
+    position: relative;
+    top: 50px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
  
