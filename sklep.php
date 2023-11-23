@@ -13,7 +13,7 @@
      <nav>
                <div class="navigation">
                     
-                   <img src="logo1.png" alt="logo">
+                   <img src="" alt="logo">
                    <input type="text" name="" id="" placeholder="wyszukaj">
                    <button class="glowna-button" onclick="przenies('strona-glowna.php')">strona głowna</button>
                     <button class="sklep-button" onclick="przenies('sklep.php')">sklep</button>
@@ -93,49 +93,234 @@
                          <input type="checkbox" name="" id=""> Firma 6<br><br>
                          <input type="submit" value="Filtruj" class="filtr-btn">
 
-
-
-
-
-
-
                     </form>
                     </div>
-                    <div class="borderline"></div>
+                    
                </div>
                <div class="produkty">
-                    <div class="produkt">
+                    <div class="produkt" id="onePROM">
                          <img src="SNIPER_RIFLE.jfif" alt="">
-                         <h2>KARABIN SNAJPERSKI</h2>
-                         <div>500zł</div><div><button>kup</button></div>
+                         <div class="nazwa-produktu"><p>Karabin Snajperski</p></div>
+                         <div class="cena-produktu"><p>500zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="tanos.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Rekawica Nieskonczonosci</p></div>
+                         <div class="cena-produktu"><p>2$</p></div>
+                    </div>      
+                    <div class="produkt">
+                         <img src="sword.webp" alt="">
+                         <div class="nazwa-produktu"><p>Diamentowy zaklety miecz </p></div>
+                         <div class="cena-produktu"><p>64 emeraldy</p></div>
+                    </div>
+                    <div class="produkt" class="naPromocji">
+                         <img src="DEAGLE.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Pistolet</p></div>
+                         <div class="cena-produktu"><p>769zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="MEdic.jfif" alt="">
+                         <div class="nazwa-produktu"><p>MEDIC!!!!</p></div>
+                         <div class="cena-produktu"><p>399zł</p></div>
+                    </div>
+                    <div class="produkt" class="naPromocji">
+                         <img src="HyperLaser.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Hyperlaser</p></div>
+                         <div class="cena-produktu"><p>2499zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="karambit.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Karambit</p></div>
+                         <div class="cena-produktu"><p>2499zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="REVOLVER.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Rewolwer</p></div>
+                         <div class="cena-produktu"><p>839zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="jar.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Słoik...</p></div>
+                         <div class="cena-produktu"><p>10zl</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="BARRET.jfif" alt="">
+                         <div class="nazwa-produktu"><p>BARRET M8</p></div>
+                         <div class="cena-produktu"><p>12999zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="REVOLVER_SCOPE.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Rosyjska Ruleta</p></div>
+                         <div class="cena-produktu"><p>999zł</p></div>
                     </div>
                     <div class="produkt">
                          <img src="SNIPER_RIFLE.jfif" alt="">
-                         <h2>KARABIN SNAJPERSKI</h2>
-                         <div>500zł</div></label><button>kup</button>
+                         <div class="nazwa-produktu"><p>Karabin Snajperski</p></div>
+                         <div class="cena-produktu"><p>500zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="RPG.jfif" alt="">
+                         <div class="nazwa-produktu"><p>RPG</p></div>
+                         <div class="cena-produktu"><p>1399zł</p></div>
+                    </div>      
+                    <div class="produkt">
+                         <img src="SCAR.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Karabin Szturmowy</p></div>
+                         <div class="cena-produktu"><p>500zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="DEAGLE.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Pistolet</p></div>
+                         <div class="cena-produktu"><p>769zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="TACTICAL_PISTOLS.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Pistolet Taktyczny</p></div>
+                         <div class="cena-produktu"><p>399zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="GRENADLUNCHER.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Wyrzutnia Granatow</p></div>
+                         <div class="cena-produktu"><p>2499zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="TOMMY.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Tommy Gun</p></div>
+                         <div class="cena-produktu"><p>2499zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="REVOLVER.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Rewolwer</p></div>
+                         <div class="cena-produktu"><p>839zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="MINIGUN.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Minigun</p></div>
+                         <div class="cena-produktu"><p>4599zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="BARRET.jfif" alt="">
+                         <div class="nazwa-produktu"><p>BARRET M8</p></div>
+                         <div class="cena-produktu"><p>12999zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="REVOLVER_SCOPE.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Rosyjska Ruleta</p></div>
+                         <div class="cena-produktu"><p>999zł</p></div>
                     </div>
                     <div class="produkt">
                          <img src="SNIPER_RIFLE.jfif" alt="">
-                         <h2>KARABIN SNAJPERSKI</h2>
-                         <div>500zł</div></label><button>kup</button>
+                         <div class="nazwa-produktu"><p>Karabin Snajperski</p></div>
+                         <div class="cena-produktu"><p>500zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="RPG.jfif" alt="">
+                         <div class="nazwa-produktu"><p>RPG</p></div>
+                         <div class="cena-produktu"><p>1399zł</p></div>
+                    </div>      
+                    <div class="produkt">
+                         <img src="SCAR.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Karabin Szturmowy</p></div>
+                         <div class="cena-produktu"><p>500zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="DEAGLE.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Pistolet</p></div>
+                         <div class="cena-produktu"><p>769zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="TACTICAL_PISTOLS.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Pistolet Taktyczny</p></div>
+                         <div class="cena-produktu"><p>399zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="GRENADLUNCHER.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Wyrzutnia Granatow</p></div>
+                         <div class="cena-produktu"><p>2499zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="TOMMY.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Tommy Gun</p></div>
+                         <div class="cena-produktu"><p>2499zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="REVOLVER.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Rewolwer</p></div>
+                         <div class="cena-produktu"><p>839zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="MINIGUN.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Minigun</p></div>
+                         <div class="cena-produktu"><p>4599zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="BARRET.jfif" alt="">
+                         <div class="nazwa-produktu"><p>BARRET M8</p></div>
+                         <div class="cena-produktu"><p>12999zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="REVOLVER_SCOPE.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Rosyjska Ruleta</p></div>
+                         <div class="cena-produktu"><p>999zł</p></div>
                     </div>
                     <div class="produkt">
                          <img src="SNIPER_RIFLE.jfif" alt="">
-                         <h2>KARABIN SNAJPERSKI</h2>
-                         <div>500zł</div></label><button>kup</button>
+                         <div class="nazwa-produktu"><p>Karabin Snajperski</p></div>
+                         <div class="cena-produktu"><p>500zł</p></div>
                     </div>
                     <div class="produkt">
-                         <img src="SNIPER_RIFLE.jfif" alt="">
-                         <h2>KARABIN SNAJPERSKI</h2>
-                         <div>500zł</div></label><button>kup</button>
-                    </div>
-
+                         <img src="RPG.jfif" alt="">
+                         <div class="nazwa-produktu"><p>RPG</p></div>
+                         <div class="cena-produktu"><p>1399zł</p></div>
+                    </div>      
                     <div class="produkt">
-                         <img src="SNIPER_RIFLE.jfif" alt="">
-                         <h2>KARABIN SNAJPERSKI</h2>
-                         <div>500zł</div></label><button>kup</button>
+                         <img src="SCAR.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Karabin Szturmowy</p></div>
+                         <div class="cena-produktu"><p>500zł</p></div>
                     </div>
-                 
+                    <div class="produkt">
+                         <img src="DEAGLE.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Pistolet</p></div>
+                         <div class="cena-produktu"><p>769zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="TACTICAL_PISTOLS.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Pistolet Taktyczny</p></div>
+                         <div class="cena-produktu"><p>399zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="GRENADLUNCHER.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Wyrzutnia Granatow</p></div>
+                         <div class="cena-produktu"><p>2499zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="TOMMY.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Tommy Gun</p></div>
+                         <div class="cena-produktu"><p>2499zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="REVOLVER.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Rewolwer</p></div>
+                         <div class="cena-produktu"><p>839zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="MINIGUN.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Minigun</p></div>
+                         <div class="cena-produktu"><p>4599zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="BARRET.jfif" alt="">
+                         <div class="nazwa-produktu"><p>BARRET M8</p></div>
+                         <div class="cena-produktu"><p>12999zł</p></div>
+                    </div>
+                    <div class="produkt">
+                         <img src="REVOLVER_SCOPE.jfif" alt="">
+                         <div class="nazwa-produktu"><p>Rosyjska Ruleta</p></div>
+                         <div class="cena-produktu"><p>999zł</p></div>
+                    </div>
+                    
+                    
+                    
                </div>
           </div>
 
