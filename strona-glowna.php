@@ -18,7 +18,7 @@
                    <img src="logo1.png" alt="logo">
                    <input type="text" name="" id="" placeholder="wyszukaj">
                    <button class="glowna-button" onclick="przenies('strona-glowna.php')">strona głowna</button>
-                    <button class="sklep-button" onclick="przenies('sklep.php')">sklep</button>
+                    <button class="sklep-button" onclick='przenies("sklep.php?zmienna=BronDluga")'>sklep</button>
                     <button class="regulamin-button" onclick="przenies('regulamin.php')">regulamin</button>
                     <button class="kontakt-button" onclick="przenies('kontakt.php')">kontakt</button>
 
@@ -76,7 +76,7 @@
                     <div class="kategoria-btn">
                       <h2 id="h21">Bron Krotka</h2>
                       <h3 id="h31">Pistolety i rewolwery</h3>
-                      <img src="DEAGLE.jfif" alt="" id="image1"><br>
+                      <img src="zdjeciaProduktow\glock.jfif" alt="" id="image1"><br>
                       <button class="kategoria-zobacz"><a href="sklep.php?zmienna=BronKrotka" id="a1">Zobacz</a></button>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                     <div class="kategoria-btn" id="kategoria-two">
                       <h2 id="h22">Bron Dluga</h2>
                       <h3 id="h32">Karabiny i sztucery</h3>
-                      <img src="SCAR.jfif" alt="" id="image2"><br>
+                      <img src="zdjeciaProduktow\ak47.jfif" alt="" id="image2"><br>
                       <button class="kategoria-zobacz"><a href="sklep.php?zmienna=BronDluga" id="a2">Zobacz</a></button>
                     </div>
                 </div>

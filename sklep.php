@@ -63,263 +63,70 @@
      
           </nav>
           <div class="sklep">
+               <?php
+                    $conn = mysqli_connect("localhost", "root", "", "bron");
+                    $sql ="";
+              
+                    if (!$conn) {
+                    die("Connection failed: " . mysqli_connect_error());
+                    }
+
+
+
+                    $typ_broni = $_GET["zmienna"];
+               
+               
+               ?>
                <div class="filtr">
                     <div class="form">
-                    <form action="">
+                    <form action="sklep.php" method="post">
                          <h2>Cena</h2>
                          <label for="">Min:</label><input type="number"><br>
                          <label for="">Maks:</label><input type="number"><br><br>
 
-                         <h2>Rodzaj</h2>
-                         <input type="checkbox" name="" id=""> Pistolet <br>
-                         <input type="checkbox" name="" id=""> Rewolwer <br>
+                         <?php
 
-                         <h2>Kaliber</h2>
-                         <input type="checkbox" name="" id=""> .22 Lr <br>
-                         <input type="checkbox" name="" id=""> .44 Magnum <br>
-                         <input type="checkbox" name="" id=""> 9 Mm <br>
-                         <input type="checkbox" name="" id=""> Rakiety <br>
-                         <input type="checkbox" name="" id=""> .22 Lr <br>
-                         <input type="checkbox" name="" id=""> .44 Magnum <br>
-                         <input type="checkbox" name="" id=""> 9 Mm <br>
-                         <input type="checkbox" name="" id=""> Rakiety <br>
+                              if($typ_broni == "BronKrotka"){
+                                   include('filter_BronKrotka.php');
+                                   $sql = "SELECT `id`, `nazwa`, `img`, `cena`, `promocja`, `amunicja_kaliber`, `producent`, `rodzaj` FROM `bron_krotka`";
+                              }elseif($typ_broni == "BronDluga"){
+                                   include('filter_BronDLuga.php');
+                                   $sql = "SELECT `id`, `nazwa`, `img`, `cena`, `promocja`, `amunicja_kaliber`, `producent`, `rodzaj` FROM `bron_dluga`";
+                              }elseif($typ_broni == "BronBiala"){
+                                   include('filter_BronBiala.php');
+                                   $sql = "SELECT `id`, `nazwa`, `img`, `cena`, `promocja`, `producent` FROM `bron_biala`";
+                              }
 
-                         <h2>Producent</h2>
-                         <input type="checkbox" name="" id=""> Firma 1<br>
-                         <input type="checkbox" name="" id=""> Firma 2<br>
-                         <input type="checkbox" name="" id=""> Firma 3<br>
-                         <input type="checkbox" name="" id=""> Firma 4<br>
-                         <input type="checkbox" name="" id=""> Firma 5<br>
-                         <input type="checkbox" name="" id=""> Firma 6<br><br>
-                         <input type="submit" value="Filtruj" class="filtr-btn">
+                         ?>
 
                     </form>
                     </div>
                     
                </div>
-               <div class="produkty">
-                    <div class="produkt" id="onePROM">
-                         <img src="SNIPER_RIFLE.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Karabin Snajperski</p></div>
-                         <div class="cena-produktu"><p>500zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="tanos.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Rekawica Nieskonczonosci</p></div>
-                         <div class="cena-produktu"><p>2$</p></div>
-                    </div>      
-                    <div class="produkt">
-                         <img src="sword.webp" alt="">
-                         <div class="nazwa-produktu"><p>Diamentowy zaklety miecz </p></div>
-                         <div class="cena-produktu"><p>64 emeraldy</p></div>
-                    </div>
-                    <div class="produkt" class="naPromocji">
-                         <img src="DEAGLE.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Pistolet</p></div>
-                         <div class="cena-produktu"><p>769zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="MEdic.jfif" alt="">
-                         <div class="nazwa-produktu"><p>MEDIC!!!!</p></div>
-                         <div class="cena-produktu"><p>399zł</p></div>
-                    </div>
-                    <div class="produkt" class="naPromocji">
-                         <img src="HyperLaser.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Hyperlaser</p></div>
-                         <div class="cena-produktu"><p>2499zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="karambit.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Karambit</p></div>
-                         <div class="cena-produktu"><p>2499zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="REVOLVER.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Rewolwer</p></div>
-                         <div class="cena-produktu"><p>839zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="jar.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Słoik...</p></div>
-                         <div class="cena-produktu"><p>10zl</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="BARRET.jfif" alt="">
-                         <div class="nazwa-produktu"><p>BARRET M8</p></div>
-                         <div class="cena-produktu"><p>12999zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="REVOLVER_SCOPE.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Rosyjska Ruleta</p></div>
-                         <div class="cena-produktu"><p>999zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="SNIPER_RIFLE.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Karabin Snajperski</p></div>
-                         <div class="cena-produktu"><p>500zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="RPG.jfif" alt="">
-                         <div class="nazwa-produktu"><p>RPG</p></div>
-                         <div class="cena-produktu"><p>1399zł</p></div>
-                    </div>      
-                    <div class="produkt">
-                         <img src="SCAR.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Karabin Szturmowy</p></div>
-                         <div class="cena-produktu"><p>500zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="DEAGLE.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Pistolet</p></div>
-                         <div class="cena-produktu"><p>769zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="TACTICAL_PISTOLS.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Pistolet Taktyczny</p></div>
-                         <div class="cena-produktu"><p>399zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="GRENADLUNCHER.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Wyrzutnia Granatow</p></div>
-                         <div class="cena-produktu"><p>2499zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="TOMMY.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Tommy Gun</p></div>
-                         <div class="cena-produktu"><p>2499zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="REVOLVER.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Rewolwer</p></div>
-                         <div class="cena-produktu"><p>839zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="MINIGUN.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Minigun</p></div>
-                         <div class="cena-produktu"><p>4599zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="BARRET.jfif" alt="">
-                         <div class="nazwa-produktu"><p>BARRET M8</p></div>
-                         <div class="cena-produktu"><p>12999zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="REVOLVER_SCOPE.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Rosyjska Ruleta</p></div>
-                         <div class="cena-produktu"><p>999zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="SNIPER_RIFLE.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Karabin Snajperski</p></div>
-                         <div class="cena-produktu"><p>500zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="RPG.jfif" alt="">
-                         <div class="nazwa-produktu"><p>RPG</p></div>
-                         <div class="cena-produktu"><p>1399zł</p></div>
-                    </div>      
-                    <div class="produkt">
-                         <img src="SCAR.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Karabin Szturmowy</p></div>
-                         <div class="cena-produktu"><p>500zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="DEAGLE.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Pistolet</p></div>
-                         <div class="cena-produktu"><p>769zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="TACTICAL_PISTOLS.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Pistolet Taktyczny</p></div>
-                         <div class="cena-produktu"><p>399zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="GRENADLUNCHER.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Wyrzutnia Granatow</p></div>
-                         <div class="cena-produktu"><p>2499zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="TOMMY.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Tommy Gun</p></div>
-                         <div class="cena-produktu"><p>2499zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="REVOLVER.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Rewolwer</p></div>
-                         <div class="cena-produktu"><p>839zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="MINIGUN.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Minigun</p></div>
-                         <div class="cena-produktu"><p>4599zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="BARRET.jfif" alt="">
-                         <div class="nazwa-produktu"><p>BARRET M8</p></div>
-                         <div class="cena-produktu"><p>12999zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="REVOLVER_SCOPE.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Rosyjska Ruleta</p></div>
-                         <div class="cena-produktu"><p>999zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="SNIPER_RIFLE.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Karabin Snajperski</p></div>
-                         <div class="cena-produktu"><p>500zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="RPG.jfif" alt="">
-                         <div class="nazwa-produktu"><p>RPG</p></div>
-                         <div class="cena-produktu"><p>1399zł</p></div>
-                    </div>      
-                    <div class="produkt">
-                         <img src="SCAR.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Karabin Szturmowy</p></div>
-                         <div class="cena-produktu"><p>500zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="DEAGLE.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Pistolet</p></div>
-                         <div class="cena-produktu"><p>769zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="TACTICAL_PISTOLS.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Pistolet Taktyczny</p></div>
-                         <div class="cena-produktu"><p>399zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="GRENADLUNCHER.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Wyrzutnia Granatow</p></div>
-                         <div class="cena-produktu"><p>2499zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="TOMMY.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Tommy Gun</p></div>
-                         <div class="cena-produktu"><p>2499zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="REVOLVER.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Rewolwer</p></div>
-                         <div class="cena-produktu"><p>839zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="MINIGUN.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Minigun</p></div>
-                         <div class="cena-produktu"><p>4599zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="BARRET.jfif" alt="">
-                         <div class="nazwa-produktu"><p>BARRET M8</p></div>
-                         <div class="cena-produktu"><p>12999zł</p></div>
-                    </div>
-                    <div class="produkt">
-                         <img src="REVOLVER_SCOPE.jfif" alt="">
-                         <div class="nazwa-produktu"><p>Rosyjska Ruleta</p></div>
-                         <div class="cena-produktu"><p>999zł</p></div>
-                    </div>
-                    
-                    
+               <div class="produkty">   
+
+                    <?php
+                         
+                         
+                        $result = mysqli_query($conn, $sql);
+                         // Wyświetl wyniki
+                         if (mysqli_num_rows($result) > 0) {
+                             while ($row = mysqli_fetch_assoc($result)) {
+                                 echo '<div class="produkt" id="' . $row['id'] . '">';
+                                 echo '<img src="' . $row['img'] . '" alt="">';
+                                 echo '<div class="nazwa-produktu"><p>' . $row['nazwa'] . " " . $row['id'] . '</p></div>';
+                                 echo '<div class="cena-produktu"><p>' . $row['cena'] . ' zł</p></div>';
+                                 echo '</div>';
+                             }
+                         } elseif(mysqli_num_rows($result) <= 0) {
+                             echo "Brak produktów z tej kategori";
+                         }
+
+                         if(isset($_POST['submit'])){
+                              Location("sklep.php?zmienna=BronDluga");
+                         }
+                         
+                         ?> 
                     
                </div>
           </div>

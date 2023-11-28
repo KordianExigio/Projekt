@@ -5,7 +5,7 @@ var i = 2;
 function zmienZawartosc(i){
      const h2 = ["Bron Krotka", "Bron Dluga", "Amunicja", "Optyka", "Akcesoria"];
      const h3 = ["Pistolety i rewolwery", "Karabiny i sztucery", "Amunicja do broni", "optyka", "akcesoria..."];
-     const img = ["DEAGLE.jfif", "SCAR.jfif", "amunicja.jfif", "optyka.jfif", "NERF_SUBMACHINEGUN.jfif"];
+     const img = ["zdjeciaProduktow\scar.jfif", "SCAR.jfif", "amunicja.jfif", "optyka.jfif", "NERF_SUBMACHINEGUN.jfif"];
      const link = ["sklep.php?zmienna=BronKrotka", "sklep.php?zmienna=BronDluga", "sklep.php?zmienna=Amunicja", "sklep.php?zmienna=Optyka", "sklep.php?zmienna=Akcesoria"];
 
 
