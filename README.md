@@ -1,4 +1,4 @@
-Tutaj powstanie storna internetowa sklepu z bronia gdzie klienci bedą mogli kupic broń, amunicje, optyke, akcesoria i inne.
+Tutaj powstanie storna internetowa sklepu z bronia gdzie klienci bedą mogli kupic broń i amunicje do niej
 W projekcie planuje stworzyc:
 1. Przyjazne dla oka interfejs uzytkownika
 2. Filtrowanie produktow
