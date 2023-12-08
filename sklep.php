@@ -98,7 +98,7 @@
             include "filter_amunicja.php";
           }
 
-          echo $baza;
+
           
           ?>
           

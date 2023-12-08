@@ -53,7 +53,7 @@
                       <h2 id="h21">Bron Krotka</h2>
                       <h3 id="h31">Pistolety i rewolwery</h3>
                       <img src="zdjeciaProduktow\szesciostrzalowiec.jfif" alt="" id="image1"><br>
-                      <button onclick='przeniesDoSklepu("Amunicja")'>zobacz</button>
+                  
                     </div>
                 </div>
                 <div class="kategorie-produktow">
@@ -61,7 +61,7 @@
                       <h2 id="h22">Bron Dluga</h2>
                       <h3 id="h32">Karabiny i sztucery</h3>
                       <img src="zdjeciaProduktow\scar.jfif" alt="" id="image2"><br>
-                      <button class="kategoria-zobacz"><a href="sklep.php?zmienna=BronDluga" id="a2">Zobacz</a></button>
+                  
                     </div>
                 </div>
                 <div class="kategorie-produktow">
