@@ -39,7 +39,7 @@ function filtruj() {
     
         var nazwaProduktuDiv = document.createElement('div');
         nazwaProduktuDiv.classList.add('nazwa-produktu');
-        nazwaProduktuDiv.innerHTML = '<p>' + item.nazwa + ' ' + item.id + '</p>';
+        nazwaProduktuDiv.innerHTML = '<p>' + item.nazwa + '</p>';
     
         var cenaProduktuDiv = document.createElement('div');
         cenaProduktuDiv.classList.add('cena-produktu');

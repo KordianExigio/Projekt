@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <button class="glowna-button" onclick="przenies('strona-glowna.php')">strona głowna</button>
             <button class="sklep-button" onclick="przenies('sklep.php')">sklep</button>
             <button class="regulamin-button" onclick="przenies('regulamin.php')">regulamin</button>
-            <button class="kontakt-button" onclick="przenies('kontakt.php')">kontakt</button>
+            
         </div>
         <div class="shop-navigation">
         <div class="dropdown" id="bron-button">

@@ -18,9 +18,8 @@
                    <img src="logo1.png" alt="logo">
                    <input type="text" name="" id="" placeholder="wyszukaj">
                    <button class="glowna-button" onclick="przenies('strona-glowna.php')">strona głowna</button>
-                    <button class="sklep-button" onclick='przenies("sklep.php?zmienna=BronDluga")'>sklep</button>
+                    <button class="sklep-button" onclick='przeniesDoSklepu("Amunicja")'>sklep</button>
                     <button class="regulamin-button" onclick="przenies('regulamin.php')">regulamin</button>
-                    <button class="kontakt-button" onclick="przenies('kontakt.php')">kontakt</button>
 
 
                </div>
@@ -48,22 +47,20 @@
               <h1><bold>Sklep z bronia i amunicja</bold></h1>
               <div class="line-1"></div>
               <div class="kategoria-opcje">
-                <div class="button-left">
-                  <button id="btn-left" onclick='przesun("left")'><</button>
-                </div>
+                
                 <div class="kategorie-produktow" id="kategoria-one">
                     <div class="kategoria-btn">
                       <h2 id="h21">Bron Krotka</h2>
                       <h3 id="h31">Pistolety i rewolwery</h3>
-                      <img src="zdjeciaProduktow\glock.jfif" alt="" id="image1"><br>
-                      <button class="kategoria-zobacz"><a href="sklep.php?zmienna=BronKrotka" id="a1">Zobacz</a></button>
+                      <img src="zdjeciaProduktow\szesciostrzalowiec.jfif" alt="" id="image1"><br>
+                      <button onclick='przeniesDoSklepu("Amunicja")'>zobacz</button>
                     </div>
                 </div>
                 <div class="kategorie-produktow">
                     <div class="kategoria-btn" id="kategoria-two">
                       <h2 id="h22">Bron Dluga</h2>
                       <h3 id="h32">Karabiny i sztucery</h3>
-                      <img src="zdjeciaProduktow\ak47.jfif" alt="" id="image2"><br>
+                      <img src="zdjeciaProduktow\scar.jfif" alt="" id="image2"><br>
                       <button class="kategoria-zobacz"><a href="sklep.php?zmienna=BronDluga" id="a2">Zobacz</a></button>
                     </div>
                 </div>
@@ -71,13 +68,11 @@
                     <div class="kategoria-btn" id="kategoria-three">
                       <h2 id="h23">Amunicja</h2>
                       <h3 id="h33">Amunicja do broni</h3>
-                      <img src="amunicja.jfif" alt="" id="image3"><br>
-                      <button class="kategoria-zobacz"><a href="sklep.php?zmienna=Amunicja" id="a3">Zobacz</a></button>
+                      <img src="produkty2\50bmg.jpg" alt="" id="image3"><br>
+                    
                     </div>
                 </div>
-                <div class="button-right">
-                  <button id="btn-right" onclick='przesun("right")'>></button>
-                </div>
+                
                 
               </div>
             
@@ -119,11 +114,20 @@ Pracujemy od poniedziałku do piątkuw godzinach 10:00 – 18:00</p><iframe src=
                var adresStronyPHP = 'http://localhost/strona/koszyk.php';
                window.location.href = adresStronyPHP;
           }
+
+          function przeniesDoSklepu(link) {
+               var adresStronyPHP = 'http://localhost/strona/sklep.php?zmienna=' + link;
+               window.location.href = adresStronyPHP;
+          }
+
+
+          var obrazKategorii = document.querySelector('.kategoria-one .kategoria-img');
+
+
+
+
+
      </script>
-     <?php
-     
-     
-     ?>
      
 </body>
 

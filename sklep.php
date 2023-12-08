@@ -18,7 +18,6 @@
             <button class="glowna-button" onclick="przenies('strona-glowna.php')">strona głowna</button>
             <button class="sklep-button" onclick="przenies('sklep.php')">sklep</button>
             <button class="regulamin-button" onclick="przenies('regulamin.php')">regulamin</button>
-            <button class="kontakt-button" onclick="przenies('kontakt.php')">kontakt</button>
         </div>
         <div class="shop-navigation">
         <div class="dropdown" id="bron-button">
@@ -34,13 +33,13 @@
                          <button onclick="przekierujNaInnaStrone()" class="dropbtn">Amunicja</button>
                        </div>
 
-                    <button class="cart_button"><img src="cart.png" alt="" class="cart-img"></button> 
+                    <button class="cart_button" onclick="przekierujNaKorzyk()"><img src="cart.png" alt="" class="cart-img"></button> 
         </div>
     </nav>
     <div class="sklep">
         <?php
         $conn = mysqli_connect("localhost", "root", "", "bron");
-        $sql = "";
+        $sql = "SELECT * FROM `bron_dluga`";
         $maxCena = "";
         $baza = "";
 
@@ -63,7 +62,7 @@
         } elseif ($baza == "BronDluga") {
             $sql = "SELECT * FROM `bron_dluga`";
          
-        } elseif ($baza == ""){
+        } elseif (empty($baza)){
             $sql = "SELECT * FROM `bron_dluga`";
         } elseif ($baza == "Amunicja"){
           $sql = "SELECT * FROM `ammo`";
@@ -95,10 +94,11 @@
             include "filter_bronKrotka.php";
           } elseif ($baza == "BronDluga") {
             include "filter_BronDluga.php";
-              $sql = "SELECT * FROM `bron_dluga`";
           }elseif ($baza == "Amunicja"){
             include "filter_amunicja.php";
           }
+
+          echo $baza;
           
           ?>
           
@@ -113,5 +113,11 @@
     </div>
 </div>
 <script src="dropdown.js"></script>
+<script>
+    function przekierujNaKorzyk() {
+               var adresStronyPHP = 'http://localhost/strona/koszyk.php';
+               window.location.href = adresStronyPHP;
+          }
+</script>
 </body>
 </html>

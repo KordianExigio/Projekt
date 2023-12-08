@@ -1,0 +1,21 @@
+.regulamin{
+     width: 80%;
+     grid-column: 1/6;
+     margin: 10%;
+}
+
+.regulamin h1, h3{
+     text-align: center;
+}
+
+.regulamin p{
+     position: relative;
+     left: 300px;
+     font-size: 17px;
+}
+
+.uwaga{
+     color: grey;
+     position: relative;
+     left: 300px;
+}

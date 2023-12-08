@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 08, 2023 at 08:25 PM
+-- Generation Time: Dec 08, 2023 at 10:06 PM
 -- Wersja serwera: 10.4.28-MariaDB
 -- Wersja PHP: 8.0.28
 
@@ -60,21 +60,6 @@ INSERT INTO `ammo` (`id`, `nazwa`, `img`, `cena`, `kaliber`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `bron_biala`
---
-
-CREATE TABLE `bron_biala` (
-  `id` int(11) NOT NULL,
-  `nazwa` text NOT NULL,
-  `img` text NOT NULL,
-  `cena` int(99) NOT NULL,
-  `promocja` int(99) NOT NULL,
-  `producent` int(99) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
 -- Struktura tabeli dla tabeli `bron_dluga`
 --
 
@@ -111,6 +96,37 @@ INSERT INTO `bron_dluga` (`id`, `nazwa`, `img`, `cena`, `promocja`, `kaliber`, `
 (17, 'Sniper Rifle', 'zdjeciaProduktow\\sniperRifle.jfif', 699990, 0, '50 BMG', 'Epic Games', 'snajperski\r\n'),
 (18, 'Sztucer', 'zdjeciaProduktow\\sztuce_r.jfif', 69999, 0, '338 Lapua Magnum', 'Epic Games', 'snajperski'),
 (19, 'Tactic', 'zdjeciaProduktow\\tactic.jfif', 6000, 0, '6.5mm', 'Epic Games', 'szturmowy');
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla tabeli `bron_krotka`
+--
+
+CREATE TABLE `bron_krotka` (
+  `id` int(11) NOT NULL,
+  `nazwa` text NOT NULL,
+  `img` text NOT NULL,
+  `cena` int(99) NOT NULL,
+  `kaliber` text NOT NULL,
+  `producent` text NOT NULL,
+  `rodzaj` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `bron_krotka`
+--
+
+INSERT INTO `bron_krotka` (`id`, `nazwa`, `img`, `cena`, `kaliber`, `producent`, `rodzaj`) VALUES
+(1, 'Dessert Eagle', 'zdjeciaProduktow\\dessert_deagle.jfif', 450, '22lr', '1', 'pistolet'),
+(2, 'Glock 19', 'zdjeciaProduktow\\glock.jfif', 240, '9mm', '2', 'pistolet'),
+(3, 'Rewolwer', 'zdjeciaProduktow\\rewolwer.jfif', 290, '44magnum', '3', 'rewolwer'),
+(4, 'Szesciostrzalowiec', 'zdjeciaProduktow\\szesciostrzalowiec.jfif', 699, '357magnum', '3', 'rewolwer'),
+(5, 'Taktyczne Pistolety', 'zdjeciaProduktow\\takryczne_pistolety.jfif', 600, '9mm', '2', 'pistolet'),
+(6, 'Pistolet z tłumikiem', 'zdjeciaProduktow\\usp-c.jfif', 899, '22lr', '1', 'pistolet'),
+(7, 'Rewolwer z lunetą', 'zdjeciaProduktow\\rewolwerZluneta.jfif', 799, '44magnum', '3', 'rewolwer'),
+(8, 'Taurus 116', 'zdjeciaProduktow\\taurus.jpg', 345, '9mm', '2', 'pistolet'),
+(9, 'Beretta ', 'zdjeciaProduktow\\beretta.jpg', 643, '22lr', '3', 'pistolet');
 
 -- --------------------------------------------------------
 
@@ -170,15 +186,15 @@ ALTER TABLE `ammo`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeksy dla tabeli `bron_biala`
---
-ALTER TABLE `bron_biala`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indeksy dla tabeli `bron_dluga`
 --
 ALTER TABLE `bron_dluga`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeksy dla tabeli `bron_krotka`
+--
+ALTER TABLE `bron_krotka`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -206,16 +222,16 @@ ALTER TABLE `ammo`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
--- AUTO_INCREMENT for table `bron_biala`
---
-ALTER TABLE `bron_biala`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `bron_dluga`
 --
 ALTER TABLE `bron_dluga`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+
+--
+-- AUTO_INCREMENT for table `bron_krotka`
+--
+ALTER TABLE `bron_krotka`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `pozycje_zamowien`

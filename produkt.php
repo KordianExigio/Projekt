@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <button class="glowna-button" onclick="przenies('strona-glowna.php')">strona głowna</button>
             <button class="sklep-button" onclick="przenies('sklep.php')">sklep</button>
             <button class="regulamin-button" onclick="przenies('regulamin.php')">regulamin</button>
-            <button class="kontakt-button" onclick="przenies('kontakt.php')">kontakt</button>
+
         </div>
         <div class="shop-navigation">
         <div class="dropdown" id="bron-button">
@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                          <button onclick="przekierujNaInnaStrone()" class="dropbtn">Amunicja</button>
                        </div>
 
-                    <button class="cart_button"><img src="cart.png" alt="" class="cart-img"></button> 
+                    <button class="cart_button" onclick="przekierujNaKorzyk()"><img src="cart.png" alt="" class="cart-img"></button> 
         </div>
     </nav>
     <div class="opisprodukt">
@@ -126,7 +126,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                               }else{
                                    echo '<input type="hidden" name="produkt_id" value='.$row['id'].' >';
                                    echo '<input type="hidden" name="produkt_cena" value='.$row['cena'].' >';
-                                   echo '<button type="submit" name="dodaj_do_koszyka">Dodaj do koszyka</button>';
+                                   echo '<button type="submit" name="dodaj_do_koszyka" class="dodajdokoszyka-btn">Dodaj do koszyka</button>';
                                    echo '<div class="ilosc">Ilosc:<input type="number" name="produkt_ilosc" value="1"></div>';
                                    
                               }
@@ -149,6 +149,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
      <script>
           function przekierujNaInnaStrone() {
                var adresStronyPHP = 'http://localhost/strona/sklep.php?zmienna=Amunicja';
+               window.location.href = adresStronyPHP;
+          }
+
+          function przekierujNaKorzyk() {
+               var adresStronyPHP = 'http://localhost/strona/koszyk.php';
                window.location.href = adresStronyPHP;
           }
      </script>

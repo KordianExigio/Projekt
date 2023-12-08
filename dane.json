@@ -1,172 +1,114 @@
 [
     {
         "id": "1",
-        "nazwa": "ak-47",
-        "img": "zdjeciaProduktow\\ak47.jfif",
-        "cena": "2500",
-        "promocja": "0",
-        "kaliber": "7,62",
-        "producent": "1",
-        "rodzaj": "szturmowy"
+        "nazwa": "Naboje kaliber 9mm",
+        "img": "produkty2\\9mmone.jpg",
+        "cena": "24",
+        "kaliber": "9mm"
     },
     {
         "id": "2",
-        "nazwa": "akacz",
-        "img": "zdjeciaProduktow\\akacz.jfif",
-        "cena": "6969",
-        "promocja": "0",
-        "kaliber": "7,65mm",
-        "producent": "2",
-        "rodzaj": "szturmowy"
+        "nazwa": "\r\nNaboje 9mm 2",
+        "img": "produkty2\\9mmtwo.jpg",
+        "cena": "18",
+        "kaliber": "9mm"
     },
     {
         "id": "3",
-        "nazwa": "AUG",
-        "img": "zdjeciaProduktow\\aug.jfif",
-        "cena": "5999",
-        "promocja": "0",
-        "kaliber": "308 Winchester",
-        "producent": "2",
-        "rodzaj": "szturmowy"
+        "nazwa": "Naboje Alfa 7,62mm",
+        "img": "produkty2\\7,62one.jpg",
+        "cena": "34",
+        "kaliber": "7,62"
     },
     {
         "id": "4",
-        "nazwa": "Barret",
-        "img": "zdjeciaProduktow\\baret.jfif",
-        "cena": "12699",
-        "promocja": "10",
-        "kaliber": "50 BMG",
-        "producent": "Epic Games",
-        "rodzaj": "snajperski"
+        "nazwa": "Naboje Beta 7,62mm",
+        "img": "produkty2\\7,62two.jpg",
+        "cena": "33",
+        "kaliber": "7,62"
     },
     {
         "id": "5",
-        "nazwa": "Black Pump",
-        "img": "zdjeciaProduktow\\BlackPump.jfif",
-        "cena": "99999999",
-        "promocja": "0",
-        "kaliber": "12",
-        "producent": "Epic Games",
-        "rodzaj": "strzelba"
+        "nazwa": "Naboje Gamma 7,62mm",
+        "img": "produkty2\\7,62three.jpg",
+        "cena": "69",
+        "kaliber": "7,62"
     },
     {
         "id": "6",
-        "nazwa": "Famas",
-        "img": "zdjeciaProduktow\\famas.jfif",
-        "cena": "3000",
-        "promocja": "0",
-        "kaliber": "7,62",
-        "producent": "Epic Games",
-        "rodzaj": "szturmowy"
+        "nazwa": "Naboje 22lr",
+        "img": "produkty2\\22lr.jpg",
+        "cena": "12",
+        "kaliber": "22lr"
     },
     {
         "id": "7",
-        "nazwa": "Dragunov",
-        "img": "zdjeciaProduktow\\dragon.png",
-        "cena": "8999",
-        "promocja": "0",
-        "kaliber": "308 Winchester",
-        "producent": "GFC Gun",
-        "rodzaj": "snajperski"
+        "nazwa": "Naboje 44 Magnum",
+        "img": "produkty2\\44mag.jpg",
+        "cena": "25",
+        "kaliber": "44magnum"
     },
     {
         "id": "8",
-        "nazwa": "Heavy Pomp",
-        "img": "zdjeciaProduktow\\heavyPomg.jfif",
-        "cena": "88888",
-        "promocja": "0",
-        "kaliber": "12",
-        "producent": "Epic Games",
-        "rodzaj": "strzelba"
+        "nazwa": "Naboje 45 ACP",
+        "img": "produkty2\\45acp.jpg",
+        "cena": "69",
+        "kaliber": "45acp"
     },
     {
         "id": "9",
-        "nazwa": "smingus dyngus",
-        "img": "zdjeciaProduktow\\SmingusDyngus.jfif",
-        "cena": "15",
-        "promocja": "0",
-        "kaliber": "5.56x45",
-        "producent": "Bazarek zelowski",
-        "rodzaj": "maszynowy"
+        "nazwa": "Naboje 50 BMG",
+        "img": "produkty2\\50bmg.jpg",
+        "cena": "87",
+        "kaliber": "50 BMG"
     },
     {
         "id": "10",
-        "nazwa": "Karabin z Luneta",
-        "img": "zdjeciaProduktow\\karabinZLuneta.jfif",
-        "cena": "0",
-        "promocja": "0",
-        "kaliber": "6.5mm",
-        "producent": "EpicGames",
-        "rodzaj": "szturmowy"
+        "nazwa": "Naboje 308 Winchester",
+        "img": "produkty2\\308win.jpg",
+        "cena": "55",
+        "kaliber": "308 Winchester"
     },
     {
         "id": "11",
-        "nazwa": "mini gun",
-        "img": "zdjeciaProduktow\\MINIGUN.jfif",
-        "cena": "0",
-        "promocja": "0",
-        "kaliber": "6.5mm",
-        "producent": "Epic Games",
-        "rodzaj": "maszynowy"
+        "nazwa": "Naboje 5,56x45mm",
+        "img": "produkty2\\5x5.jpg",
+        "cena": "44",
+        "kaliber": "5.56x45"
     },
     {
         "id": "12",
-        "nazwa": "muszkiet",
-        "img": "zdjeciaProduktow\\muszkiet.jfif",
-        "cena": "500",
-        "promocja": "0",
-        "kaliber": "inna\r\n",
-        "producent": "Bazarek zelowski",
-        "rodzaj": "inna"
+        "nazwa": "Naboje Alfa 6,5mm",
+        "img": "produkty2\\6,5mmone.jpg",
+        "cena": "45",
+        "kaliber": "6.5mm"
+    },
+    {
+        "id": "13",
+        "nazwa": "Naboje Beta 6,5mm",
+        "img": "produkty2\\6,5mmtwo.jpg",
+        "cena": "45",
+        "kaliber": "6.5mm"
     },
     {
         "id": "14",
-        "nazwa": "Pump Shotgun",
-        "img": "zdjeciaProduktow\\PUMP_SHOTGUN.jfif",
-        "cena": "5600",
-        "promocja": "0",
-        "kaliber": "12",
-        "producent": "Epic Games",
-        "rodzaj": "strzelba"
+        "nazwa": "Naboje Alfa 357 Magnum",
+        "img": "produkty2\\357 magnum.jpg",
+        "cena": "56",
+        "kaliber": "357magnum"
+    },
+    {
+        "id": "15",
+        "nazwa": "Naboje 12\/70",
+        "img": "produkty2\\1270.jpg",
+        "cena": "34",
+        "kaliber": "12"
     },
     {
         "id": "16",
-        "nazwa": "Scar",
-        "img": "zdjeciaProduktow\\scar.jfif",
-        "cena": "4599",
-        "promocja": "0",
-        "kaliber": "7,65",
-        "producent": "Epic Games",
-        "rodzaj": "szturmowy"
-    },
-    {
-        "id": "17",
-        "nazwa": "Sniper Rifle",
-        "img": "zdjeciaProduktow\\sniperRifle.jfif",
-        "cena": "699990",
-        "promocja": "0",
-        "kaliber": "50 BMG",
-        "producent": "Epic Games",
-        "rodzaj": "snajperski\r\n"
-    },
-    {
-        "id": "18",
-        "nazwa": "Sztucer",
-        "img": "zdjeciaProduktow\\sztuce_r.jfif",
-        "cena": "69999",
-        "promocja": "0",
-        "kaliber": "338 Lapua Magnum",
-        "producent": "Epic Games",
-        "rodzaj": "snajperski"
-    },
-    {
-        "id": "19",
-        "nazwa": "Tactic",
-        "img": "zdjeciaProduktow\\tactic.jfif",
-        "cena": "6000",
-        "promocja": "0",
-        "kaliber": "6.5mm",
-        "producent": "Epic Games",
-        "rodzaj": "szturmowy"
+        "nazwa": "Naboje Gamma 338 Lapua Magnum",
+        "img": "produkty2\\lapua.jpg",
+        "cena": "66",
+        "kaliber": "338 Lapua Magnum"
     }
 ]
