@@ -91,3 +91,8 @@ nav {
      display: grid;
      grid-template-columns: repeat(5, 1fr);
  }
+
+ .buy-btn{
+     background-color: #69774C;
+     border-radius: 5px;
+ }

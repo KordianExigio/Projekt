@@ -352,7 +352,7 @@
     top: 100px;
     background-color: #f7f7f7;
     grid-column: 1/6;
-    margin-bottom: 50px; /* Added margin at the bottom to create space for the "O-nas" div */
+    margin-bottom: 50px;
 }
 
 .O-Nas {

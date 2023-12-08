@@ -82,7 +82,7 @@
                               echo "<p class='uwaga'>Ten produkt nie jest mozliwy do zakupienia przez nasz sklep intrnetowy.
                               Konieczne bedzie odwiedzenie jednego z naszych sklepow stacjonarnych ze zezwoleniem ze bron by miec mozliwosc kupna takiego.</p>";
                          }else{
-                              echo "<button class='but-btn'>Dodaj do koszyka</button>";
+                              echo '<button class="buy-btn">Dodaj do koszyka</button>';
                          }
 
                     ?>

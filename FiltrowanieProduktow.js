@@ -52,7 +52,6 @@ function filtruj() {
         produktDiv.appendChild(nazwaProduktuDiv);
         produktDiv.appendChild(cenaProduktuDiv);
     
-        // Dodaj obsługę kliknięcia do każdego elementu produktDiv
         produktDiv.addEventListener('click', function() {
             
             console.log('Kliknięto na produkt o id: ' + item.id);
