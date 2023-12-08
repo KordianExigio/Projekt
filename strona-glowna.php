@@ -30,37 +30,16 @@
                          <div id="myDropdown" class="dropdown-content">
                            <a href="sklep.php?zmienna=BronKrotka">Broń Krótka</a>
                            <a href="sklep.php?zmienna=BronDluga">Broń Długa</a>
-                           <a href="sklep.php?zmienna=BronBiala">Broń Biała</a>
                          </div>
                        </div>
 
                        <div class="dropdown" id="amunicja-button">
-                         <button onclick="dropdown('myDropdown1')" class="dropbtn">Amunicja ⬇</button>
-                         <div id="myDropdown1" class="dropdown-content">
-                           <a href="sklep.php?zmienna=AmmoDoPistoletow">Do pistoletow i rewolwerów</a>
-                           <a href="sklep.php?zmienna=AmmoDoKarabinow">Do karabinów</a>
-                           <a href="sklep.php?zmienna=AmmoDoStrzelby">Do strzelby</a>
-                           <a href="sklep.php?zmienna=AmmoInna">Inna</a>
-                         </div>
+                         <button onclick="dropdown('myDropdown1')" class="dropbtn">Amunicja</button>
                        </div>
 
-                       <div class="dropdown" id="optyka-button">
-                         <button onclick="dropdown('myDropdown2')" class="dropbtn">Optyka ⬇</button>
-                         <div id="myDropdown2" class="dropdown-content">
-                           <a href="sklep.php?zmienna=CelownikiKolimetrowe">Celowniki kolimetrowe</a>
-                           <a href="sklep.php?zmienna=Lunety">Lunety</a>
-                           <a href="sklep.php?zmienna=Lornetki">Lornetki</a>
-                         </div>
-                       </div>
-
-                       <div class="dropdown" id="akcesoria-button">
-                         <button onclick="dropdown('myDropdown3')" class="dropbtn">Akcesoria ⬇</button>
-                         <div id="myDropdown3" class="dropdown-content">
-                           <a href="sklep.php?zmienna=DoBroni">Do broni</a>
-                           <a href="sklep.php?zmienna=Inne">Inne</a>
-                         </div>
+                       <button class="cart_button" onclick="przekierujNaKorzyk()"><img src="cart.png" alt="" class="cart-img"></button>  
                        </div> 
-                    <button class="cart_button"><img src="cart.png" alt="" class="cart-img"></button>   
+                     
                </div>
      
           </nav>
@@ -129,7 +108,18 @@ Pracujemy od poniedziałku do piątkuw godzinach 10:00 – 18:00</p><iframe src=
       </div>
 
      <script src="dropdown.js"></script>
-     <script src="slide-category.js"></script>
+    
+     <script>
+          function przekierujNaInnaStrone() {
+               var adresStronyPHP = 'http://localhost/strona/sklep.php?zmienna=Amunicja';
+               window.location.href = adresStronyPHP;
+          }
+
+          function przekierujNaKorzyk() {
+               var adresStronyPHP = 'http://localhost/strona/koszyk.php';
+               window.location.href = adresStronyPHP;
+          }
+     </script>
      <?php
      
      

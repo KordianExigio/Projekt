@@ -77,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                          <button onclick="przekierujNaInnaStrone()" class="dropbtn">Amunicja</button>
                        </div>
 
-                    <button class="cart_button"><img src="cart.png" alt="" class="cart-img"></button> 
+                    <button class="cart_button" onclick="przekierujNaKorzyk()"><img src="cart.png" alt="" class="cart-img"></button> 
         </div>
     </nav>
 
@@ -114,7 +114,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           echo '<p>Twój koszyk jest pusty.</p>';
           }
           ?>
-          <form action="process_order.php" method="post" class="formularz">
+          <form action="koszyk.php" method="post" class="formularz">
             <h2>Dane do dostawy</h2>
 
           <table class="formTable">
@@ -156,8 +156,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <button type="submit" name="zloz_zamowienie" class="zamowienie">Złóż zamówienie</button>
 
             <?php
-            
-            
+                if (isset($_POST['zloz_zamowienie']) && $_SESSION['cart'] != array()) {
+                    $imie = mysqli_real_escape_string($conn, $_POST['imie']);
+                    $nazwisko = mysqli_real_escape_string($conn, $_POST['nazwisko']);
+                    $adres = mysqli_real_escape_string($conn, $_POST['adres']);
+
+
+                    $sqlZamowienie = "INSERT INTO zamowienia (imie, nazwisko, adres, cena) VALUES ('$imie', '$nazwisko', '$adres', $CalkowitaCenaZamowienia)";
+                    mysqli_query($conn, $sqlZamowienie);
+
+
+                    $ostatnieIdZamowienia = mysqli_insert_id($conn);
+
+        
+                    foreach ($_SESSION['cart'] as $produktId => $produkt) {
+                        $ilosc = $produkt['ilosc'];
+                        $cenaProduktu = $produkt['cena'];
+
+                        $sqlPozycjaZamowienia = "INSERT INTO pozycje_zamowien (id_zamowienia, id_produktu, ilosc, cena) VALUES ($ostatnieIdZamowienia, $produktId, $ilosc, $cenaProduktu)";
+                        mysqli_query($conn, $sqlPozycjaZamowienia);
+                    }
+
+                    $_SESSION['cart'] = array();
+
+                    header("Location: strona-glowna.php");
+                    exit();
+            }
+                
             
             
             
@@ -171,6 +196,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <script>
           function przekierujNaInnaStrone() {
                var adresStronyPHP = 'http://localhost/strona/sklep.php?zmienna=Amunicja';
+               window.location.href = adresStronyPHP;
+          }
+
+          function przekierujNaKorzyk() {
+               var adresStronyPHP = 'http://localhost/strona/koszyk.php';
                window.location.href = adresStronyPHP;
           }
      </script>
