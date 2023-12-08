@@ -13,7 +13,5 @@ echo '<input type="checkbox" name="producent[]" id="firma1"> Firma 1<br>';
 echo '<input type="checkbox" name="producent[]" id="firma2"> Firma 2<br>';
 echo '<input type="checkbox" name="producent[]" id="firma3"> Firma 3<br><br>';
 
-// Submit button
-echo '<button>Filtruj</button>';
 
 ?>

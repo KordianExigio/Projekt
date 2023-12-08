@@ -1,0 +1,114 @@
+[
+    {
+        "id": "1",
+        "nazwa": "Naboje kaliber 9mm",
+        "img": "produkty2\\9mmone.jpg",
+        "cena": "24",
+        "kaliber": "9mm"
+    },
+    {
+        "id": "2",
+        "nazwa": "\r\nNaboje 9mm 2",
+        "img": "produkty2\\9mmtwo.jpg",
+        "cena": "18",
+        "kaliber": "9mm"
+    },
+    {
+        "id": "3",
+        "nazwa": "Naboje Alfa 7,62mm",
+        "img": "produkty2\\7,62one.jpg",
+        "cena": "34",
+        "kaliber": "7,62"
+    },
+    {
+        "id": "4",
+        "nazwa": "Naboje Beta 7,62mm",
+        "img": "produkty2\\7,62two.jpg",
+        "cena": "33",
+        "kaliber": "7,62"
+    },
+    {
+        "id": "5",
+        "nazwa": "Naboje Gamma 7,62mm",
+        "img": "produkty2\\7,62three.jpg",
+        "cena": "69",
+        "kaliber": "7,62"
+    },
+    {
+        "id": "6",
+        "nazwa": "Naboje 22lr",
+        "img": "produkty2\\22lr.jpg",
+        "cena": "12",
+        "kaliber": "22lr"
+    },
+    {
+        "id": "7",
+        "nazwa": "Naboje 44 Magnum",
+        "img": "produkty2\\44mag.jpg",
+        "cena": "25",
+        "kaliber": "44magnum"
+    },
+    {
+        "id": "8",
+        "nazwa": "Naboje 45 ACP",
+        "img": "produkty2\\45acp.jpg",
+        "cena": "69",
+        "kaliber": "45acp"
+    },
+    {
+        "id": "9",
+        "nazwa": "Naboje 50 BMG",
+        "img": "produkty2\\50bmg.jpg",
+        "cena": "87",
+        "kaliber": "50 BMG"
+    },
+    {
+        "id": "10",
+        "nazwa": "Naboje 308 Winchester",
+        "img": "produkty2\\308win.jpg",
+        "cena": "55",
+        "kaliber": "308 Winchester"
+    },
+    {
+        "id": "11",
+        "nazwa": "Naboje 5,56x45mm",
+        "img": "produkty2\\5x5.jpg",
+        "cena": "44",
+        "kaliber": "5.56x45"
+    },
+    {
+        "id": "12",
+        "nazwa": "Naboje Alfa 6,5mm",
+        "img": "produkty2\\6,5mmone.jpg",
+        "cena": "45",
+        "kaliber": "6.5mm"
+    },
+    {
+        "id": "13",
+        "nazwa": "Naboje Beta 6,5mm",
+        "img": "produkty2\\6,5mmtwo.jpg",
+        "cena": "45",
+        "kaliber": "6.5mm"
+    },
+    {
+        "id": "14",
+        "nazwa": "Naboje Alfa 357 Magnum",
+        "img": "produkty2\\357 magnum.jpg",
+        "cena": "56",
+        "kaliber": "357magnum"
+    },
+    {
+        "id": "15",
+        "nazwa": "Naboje 12\/70",
+        "img": "produkty2\\1270.jpg",
+        "cena": "34",
+        "kaliber": "12"
+    },
+    {
+        "id": "16",
+        "nazwa": "Naboje Gamma 338 Lapua Magnum",
+        "img": "produkty2\\lapua.jpg",
+        "cena": "66",
+        "kaliber": "338 Lapua Magnum"
+    }
+]

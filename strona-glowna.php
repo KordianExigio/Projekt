@@ -103,56 +103,7 @@
               </div>
             
           </div>
-          <div class="promocje">
-                <h1>Promocje</h1>
-                <div class="line-2"></div>
-                <h2 class="h2">Znajdz produkty o obnizonej cenie</h2>
-                <div class="promocje-opcje">
-                  <div class="prodoktPromocja" id="produkt1">
-                    <div class="promocja-metka"><div class="promocja-metka-dziura"></div><p>-50%</p></div>
-                        <img src="DEAGLE.jfif" alt="" id="image1"><br>
-                        <h2 id="h21">Dessert Deagle</h2>
-                        <div class="ceny">
-                              <div class="cena"><h4>800zł</h4></div><div class="cena-obnizona"><h4>400zł</h4></div>
-                        </div>
-                  </div>
-                  <div class="prodoktPromocja" id="produkt1">
-                        <div class="promocja-metka"><div class="promocja-metka-dziura"></div><p>-50%</p></div>
-                        <img src="DEAGLE.jfif" alt="" id="image1"><br>
-                        <h2 id="h21">Dessert Deagle</h2>
-                        <div class="ceny">
-                              <div class="cena"><h4>800zł</h4></div><div class="cena-obnizona"><h4>400zł</h4></div>
-                        </div>
-                      
-                  </div>
-                  <div class="prodoktPromocja" id="produkt1">
-                        <div class="promocja-metka"><div class="promocja-metka-dziura"></div><p>-50%</p></div>
-                        <img src="DEAGLE.jfif" alt="" id="image1"><br>
-                        <h2 id="h21">Dessert Deagle</h2>
-                        <div class="ceny">
-                              <div class="cena"><h4>800zł</h4></div><div class="cena-obnizona"><h4>400zł</h4></div>
-                        </div>
-                     
-                  </div>
-                  <div class="prodoktPromocja" id="produkt1">
-                        <div class="promocja-metka"><div class="promocja-metka-dziura"></div><p>-50%</p></div>
-                        <img src="DEAGLE.jfif" alt="" id="image1"><br>
-                        <h2 id="h21">Dessert Deagle</h2>
-                        <div class="ceny">
-                              <div class="cena"><h4>800zł</h4></div><div class="cena-obnizona"><h4>400zł</h4></div>
-                        </div>
-                    
-                  </div>
-                  <div class="prodoktPromocja" id="produkt1">
-                        <div class="promocja-metka"><div class="promocja-metka-dziura"></div><p>-50%</p></div>
-                        <img src="DEAGLE.jfif" alt="" id="image1"><br>
-                        <h2 id="h21">Dessert Deagle</h2>
-                        <div class="ceny">
-                              <div class="cena"><h4>800zł</h4></div><div class="cena-obnizona"><h4>400zł</h4></div>
-                        </div>
-                  
-                  </div>
-              </div>
+          
           </div>
      </div>
      <div class="O-Nas">

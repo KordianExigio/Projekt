@@ -1,27 +1,34 @@
 
 <?php
-echo '<form action="your_action_file.php" method="post">';
 
-// Rodzaj
-echo '<h2>Rodzaj</h2>';
-echo '<input type="checkbox" name="rodzaj[]" id="pistolet"> Pistolet <br>';
-echo '<input type="checkbox" name="rodzaj[]" id="rewolwer"> Rewolwer <br>';
 
-// Kaliber
-echo '<h2>Kaliber</h2>';
-echo '<input type="checkbox" name="kaliber[]" id="22lr"> .22 Lr <br>';
-echo '<input type="checkbox" name="kaliber[]" id="44magnum"> .44 Magnum <br>';
-echo '<input type="checkbox" name="kaliber[]" id="9mm"> 9 Mm <br>';
+echo '
+<div class="filter">
+     <input type="hidden" id="base" value="BronKrotka">
+    <p>CENA</p>
+    Od:<input type="number" name="cenaMIN" id="cenaMin" value="0">
+    Do:<input type="number" name="cenaMAX" id="cenaMax" value="9999"><br><br>
+    
+    <p>Rodzaj</p>
+    <input type="checkbox" name="rodzajBroni" value="pistolet"> Pistolet <br>
+    <input type="checkbox" name="rodzajBroni" value="rewolwer"> Rewolwer<br><br>
 
-// Producent
-echo '<h2>Producent</h2>';
-echo '<input type="checkbox" name="producent[]" id="firma1"> Firma 1<br>';
-echo '<input type="checkbox" name="producent[]" id="firma2"> Firma 2<br>';
-echo '<input type="checkbox" name="producent[]" id="firma3"> Firma 3<br><br>';
+    <p>Kaliber</p>
+    <input type="checkbox" name="kaliber" value="22lr"> 22 lr <br>
+    <input type="checkbox" name="kaliber" value="9mm"> 9mm <br>
+    <input type="checkbox" name="kaliber" value="45acp"> 45 ACP <br>
+    <input type="checkbox" name="kaliber" value="44magnum"> 44 Magnum <br>
+    <input type="checkbox" name="kaliber" value="357magnum"> 357 Magnum<br><br>
 
-// Submit button
-echo '<input type="submit" value="Filtruj" class="filtr-btn">';
+    <p>Producent</p>
+    <input type="checkbox" name="producent" value="1"> Firma 1 <br>
+    <input type="checkbox" name="producent" value="2"> Firma 2 <br>
+    <input type="checkbox" name="producent" value="3"> Firma 3<br><br>
 
-echo '</form>';
+    <button onclick="filtruj()">FILTRUJ</button><br><br>
+</div>';
+
+
+
 ?>
 
