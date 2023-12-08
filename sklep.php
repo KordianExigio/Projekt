@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="dropdown.css">
     <title>sklep</title>
 </head>
+
 <body class="body">
 
 <div class="grid-container">

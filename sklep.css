@@ -16,7 +16,6 @@
  
  .grid-container{
      display: grid;
-     height: 2000px;
      grid-template-columns: repeat(5, 1fr);
  }
  

@@ -49,7 +49,10 @@ body {
 }
 
 .uwaga{
-     color: red;
+     color: rgb(255, 115, 0);
+     background-color: rgb(254, 211, 171);
+     padding: 15px;
+     border: 1px solid rgb(255, 115, 0);
 }
 
 .opis h1{
@@ -89,10 +92,36 @@ nav {
 
   .grid-container{
      display: grid;
+     height: 2000px;
      grid-template-columns: repeat(5, 1fr);
  }
 
- .buy-btn{
+ .dodajdokoszyka-btn{
+     border-radius: 15px;
+     border: none;
+     box-shadow: 5px 5px 5px rgb(186, 186, 186);
+     position: relative;
+     top: 70px;
+     left: 400px;
      background-color: #69774C;
-     border-radius: 5px;
+     padding: 30px;
+     color: #fff;
+     cursor: pointer;
+
+ }
+
+ .lorem{
+     position: relative;
+     top: 70px;
+     background-color: #e6e6e6;
+     padding: 15px;
+     border-radius: 20px;
+ }
+
+ .ilosc{
+
+     width: 300px;
+     position: relative;
+     top: -50px;
+     left: 370px;
  }

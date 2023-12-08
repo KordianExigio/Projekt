@@ -1,0 +1,74 @@
+.koszyk {
+     grid-column: 1/8;
+     position: relative;
+     width: 80%;
+     margin-left: 10%;
+
+ }
+
+ .grid-container{
+     display: grid;
+     grid-template-columns: repeat(5, 1fr);
+ }
+
+body {
+
+}
+
+.lista-produktow{
+     width: 100%;
+     position: relative;
+     left: 0px;
+     top: 200px;     
+}
+
+.h11 {
+     position: relative;
+     top: 150px;
+     text-align: center;
+ }
+ 
+ table {
+     width: 100%;
+     border-collapse: collapse;
+     margin-top: 20px;
+ }
+ 
+ th, td {
+     border: 1px solid #ddd;
+     padding: 8px;
+     text-align: left;
+ }
+ 
+ th {
+     background-color: #f2f2f2;
+ }
+ 
+ .nazwaProduktu {
+     position: relative;
+     left: 10px;
+     top: -20px;
+ }
+ 
+ img {
+     width: 100px;
+     height: 100px;
+ }
+
+ .formularz{
+     height: 400px;
+ }
+
+ .zamowienie{
+     background-color: #69774C;
+     color: white;
+     padding: 15px;
+     border-radius: 10px;
+     border: none;
+     transition: 0.1s;
+ }
+
+ .zamowienie:hover{
+     background-color: #a7bf76;
+     cursor: pointer;
+ }
