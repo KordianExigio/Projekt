@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 08, 2023 at 12:53 PM
+-- Generation Time: Dec 08, 2023 at 08:25 PM
 -- Wersja serwera: 10.4.28-MariaDB
 -- Wersja PHP: 8.0.28
 
@@ -115,17 +115,49 @@ INSERT INTO `bron_dluga` (`id`, `nazwa`, `img`, `cena`, `promocja`, `kaliber`, `
 -- --------------------------------------------------------
 
 --
+-- Struktura tabeli dla tabeli `pozycje_zamowien`
+--
+
+CREATE TABLE `pozycje_zamowien` (
+  `id` int(11) NOT NULL,
+  `id_zamowienia` int(11) DEFAULT NULL,
+  `id_produktu` int(11) DEFAULT NULL,
+  `ilosc` int(11) DEFAULT NULL,
+  `cena` decimal(10,2) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `pozycje_zamowien`
+--
+
+INSERT INTO `pozycje_zamowien` (`id`, `id_zamowienia`, `id_produktu`, `ilosc`, `cena`) VALUES
+(1, 1, 16, 3, 66.00),
+(2, 1, 3, 8, 34.00),
+(3, 2, 1, 3, 24.00),
+(4, 2, 5, 6, 69.00);
+
+-- --------------------------------------------------------
+
+--
 -- Struktura tabeli dla tabeli `zamowienia`
 --
 
 CREATE TABLE `zamowienia` (
   `id` int(11) NOT NULL,
-  `klient_id` int(11) DEFAULT NULL,
-  `produkt_id` int(11) DEFAULT NULL,
-  `ilosc` int(11) DEFAULT NULL,
-  `cena` decimal(10,2) DEFAULT NULL,
+  `imie` varchar(50) NOT NULL,
+  `nazwisko` varchar(50) NOT NULL,
+  `adres` varchar(255) NOT NULL,
+  `cena` decimal(10,2) NOT NULL,
   `data_zamowienia` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `zamowienia`
+--
+
+INSERT INTO `zamowienia` (`id`, `imie`, `nazwisko`, `adres`, `cena`, `data_zamowienia`) VALUES
+(1, 'Kordian', 'Domagała', 'miejscowosc1', 470.00, '2023-12-08 19:00:42'),
+(2, 'Zbyszek', 'Wieczorek', 'miejscowoac2', 486.00, '2023-12-08 19:03:28');
 
 --
 -- Indeksy dla zrzutów tabel
@@ -148,6 +180,14 @@ ALTER TABLE `bron_biala`
 --
 ALTER TABLE `bron_dluga`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indeksy dla tabeli `pozycje_zamowien`
+--
+ALTER TABLE `pozycje_zamowien`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_zamowienia` (`id_zamowienia`),
+  ADD KEY `id_produktu` (`id_produktu`);
 
 --
 -- Indeksy dla tabeli `zamowienia`
@@ -178,10 +218,27 @@ ALTER TABLE `bron_dluga`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
+-- AUTO_INCREMENT for table `pozycje_zamowien`
+--
+ALTER TABLE `pozycje_zamowien`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT for table `zamowienia`
 --
 ALTER TABLE `zamowienia`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `pozycje_zamowien`
+--
+ALTER TABLE `pozycje_zamowien`
+  ADD CONSTRAINT `pozycje_zamowien_ibfk_1` FOREIGN KEY (`id_zamowienia`) REFERENCES `zamowienia` (`id`),
+  ADD CONSTRAINT `pozycje_zamowien_ibfk_2` FOREIGN KEY (`id_produktu`) REFERENCES `ammo` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
