@@ -6,4 +6,6 @@ W projekcie planuje stworzyc:
 4. Baza danych z produktami i zamowieniami i inne ✔️
 
 (stworzylem nowe reopzytorium poniewaz byl problem z poprzednim)
+
+Projekt zostal juz ukonczony.
   
